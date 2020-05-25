@@ -1350,13 +1350,43 @@ body .layui-util-face .layui-layer-content {
 	text-overflow: ellipsis;
 }
 
+body::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: white;
+	border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #E6E6E6;
+	border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: #E6E6E6;
+}
+
+body::-webkit-scrollbar-corner {
+	background: #f6f6f6;
+}
+
+
 .product-card .product-body .layui-badge-rim {
 	position: absolute;
 	right: 20px;
 	top: 22px;
+	border-radius: 3px;
 	color: #FF5722;
 	border-color: #FF5722;
-	padding: 0 3px 0 1px;
+	padding: 3px 5px 3px 5px;
 	border-radius: 0;
 }
 
