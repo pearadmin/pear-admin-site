@@ -105,23 +105,23 @@
 							<h3>上手容易</h3>
 							<p>完善的在线开发文档</p>
 							<p>大量的示例演示，组件式开发</p>
-							<p>提供授权用户专属技术服务群</p>
+							<p>提供用户技术服务群</p>
 						</div>
 					</div>
 					<div class="layui-col-md4 layui-col-sm6">
 						<div class="feature">
 							<i class="layui-icon layui-icon-rmb"></i>
-							<h3>低成本</h3>
+							<h3>零成本</h3>
 							<p>帮您省去了产品、设计等人员的工作</p>
-							<p>一次永久授权，终身免费更新</p>
-							<p>与同类产品相比性价比最高</p>
+							<p>Apache 2.0 开源协议</p>
+							<p>允许商用，二次开发等</p>
 						</div>
 					</div>
 					<div class="layui-col-md4 layui-col-sm6">
 						<div class="feature">
 							<i class="layui-icon layui-icon-auz"></i>
-							<h3>售后保障</h3>
-							<p>完善的售后保障，5x8小时服务</p>
+							<h3>开源团队</h3>
+							<p>完善的 5x8 小时服务</p>
 							<p>版本持续更新，满足大众需求</p>
 							<p>始终基于Layui最新版</p>
 						</div>
@@ -187,22 +187,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="layui-col-md4 layui-col-sm6">
-						<div class="product-card">
-							<div class="product-cover">
-								<div class="product-cover-img" style="background-image: url('assets/images/show3.jpg');"></div>
-								<div class="product-tools">
-									<a href="http://jmysy.gitee.io/pear-admin-layui/Pear%20Admin%20v%202.0/" class="layui-btn" target="_blank">演示</a>
-									<a href="https://gitee.com/Jmysy/Pear-Admin-Layui" class="layui-btn">详情</a>
-								</div>
-							</div>
-							<div class="product-body">
-								<a href="https://gitee.com/Jmysy/Pear-Admin-Layui" class="product-title">Pear Admin Plugin</a>
-								<p class="product-desc">Pear Boot / Pear Cloud 插件服务</p>
-								<span class="layui-badge-rim">Apache License</span>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -242,28 +226,7 @@
 				var layer = layui.layer;
 				var form = layui.form;
 
-				// 表单提交
-				form.on('submit(contactSubmit)', function(obj) {
-					var loadIndex = layer.msg('请求中...', {
-						icon: 16,
-						shade: 0.01
-					});
-					$.post('sendMsg', obj.field, function(res) {
-						if (200 == res.code) {
-							layer.msg(res.msg, {
-								icon: 1,
-								time: 1500
-							});
-						} else {
-							layer.close(loadIndex);
-							layer.msg(res.msg, {
-								icon: 5
-							});
-						}
-					}, 'JSON');
-					return false;
-				});
-
+		
 			});
 		</script>
 	</body>

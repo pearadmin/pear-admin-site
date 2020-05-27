@@ -1020,6 +1020,10 @@ body .layui-util-face .layui-layer-content {
 	display: inline-block;
 }
 
+.ew-banner-right .show:hover{
+	box-shadow: 2px 0 5px rgba(0, 21, 41, .35);
+}
+
 
 .ew-banner>.layui-container {
 	text-align: center;
