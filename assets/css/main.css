@@ -2,7 +2,7 @@
 body {
 	padding-top: 70px;
 	color: #666;
-	background: #F4F7F7;
+	background-color: #f8fafc;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
@@ -418,8 +418,6 @@ input.layui-disabled:hover {
 }
 
 /** // 右侧弹窗动画end */
-
-/** admin风格的弹窗 */
 .layui-layer.layui-layer-admin {
 	box-shadow: 1px 1px 50px rgba(0, 0, 0, .3) !important;
 	border: none !important;
@@ -504,6 +502,11 @@ input.layui-disabled:hover {
 
 /* 小屏幕下两边和下边留空白 */
 @media screen and (max-width: 768px) {
+
+	.show {
+		height: 260px !important;
+	}
+
 	.layui-layer-admin {
 		width: max-content;
 		max-width: 98%;
@@ -528,9 +531,6 @@ input.layui-disabled:hover {
 }
 
 /** // admin风格弹窗样式结束 */
-
-/** msg样式修改 */
-
 .layui-layer-msg {
 	border-radius: 4px !important;
 	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1) !important;
@@ -663,7 +663,7 @@ body .layui-util-face .layui-layer-content {
 	font-weight: 600;
 	color: #3EC483;
 	padding-left: 42px;
-	 background-image: url("../images/logo3.png");
+	background-image: url("../images/logo3.png");
 	background-size: 32px;
 	background-position: 0 19px;
 	background-repeat: no-repeat;
@@ -1020,7 +1020,7 @@ body .layui-util-face .layui-layer-content {
 	display: inline-block;
 }
 
-.ew-banner-right .show:hover{
+.ew-banner-right .show:hover {
 	box-shadow: 2px 0 5px rgba(0, 21, 41, .35);
 }
 
@@ -2472,3 +2472,35 @@ a.icon-text>.layui-icon {
 }
 
 /** //adv-item */
+
+.layui-btn {
+	display: inline-block !important;
+	height: 45px !important;
+	line-height: 45px !important;
+	padding: 0 18px !important;
+	white-space: nowrap !important;
+	text-align: center !important;
+	font-size: 15px !important;
+	border: none !important;
+	cursor: pointer !important;
+	box-sizing: border-box !important;
+	border-radius: 2px !important;
+	color: #2f495e !important;
+	background-color: #edf2f7 !important;
+	outline: 0 !important;
+	-webkit-appearance: none !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15) !important;
+}
+
+.layui-btn:hover {
+	color: #2f495e !important;
+}
+
+.layui-btn-primary {
+	background-color: #00c58e !important;
+	color: #fff !important;
+}
+
+.layui-btn-primary:hover {
+	color: white !important;
+}
