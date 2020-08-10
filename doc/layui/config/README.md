@@ -15,7 +15,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - image : 网站图标
 
 
-## 菜单配置
+## 侧边菜单
 
 ```json
 "menu": {
@@ -31,7 +31,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - control : 菜单模式
 - select : 默认选中菜单项 (ID)
 
-## 选项卡配置
+## 多选项卡
 
 ```json
 "tab": {
@@ -65,7 +65,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
 - allowCustom : 是否允许用户自行切换主题
 
-## 颜色配置
+## 颜色列表
 
 ```json
 "colors": [
