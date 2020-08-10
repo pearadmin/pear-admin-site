@@ -8,6 +8,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 "logo": {
 	"title": "Pear Admin",
 	"image": "admin/images/logo.png"
+	.....
 }
 ```
 
@@ -23,6 +24,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 	"accordion": true,
 	"control": false,
 	"select": "0"
+	.....
 }
 ```
 
@@ -43,6 +45,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 		"href": "view/console/console1.html",
 		"title": "首页"
 	}
+	.....
 }
 ```
 
@@ -58,6 +61,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 	"defaultColor": "2",
 	"defaultMenu": "dark-theme",
 	"allowCustom": true
+	.....
 }
 ```
 
@@ -85,6 +89,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 		"id": "5",
 		"color": "darkgray"
 	}
+	.....
 ]
 ```
 
@@ -95,7 +100,10 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 
 ```json
 "other": {
-	"keepLoad": 1200
+	"keepLoad": 1200,
+	.....
+	.....
+	.....
 }
 ```
 - keepLoad : 主页加载时长
