@@ -97,7 +97,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 
 ```json
 "other": {
-		"keepLoad": 1200
-	}
+	"keepLoad": 1200
+}
 ```
 - keepLoad : 主页加载时长
