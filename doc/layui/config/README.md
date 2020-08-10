@@ -3,7 +3,7 @@
 Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适合你的界面布局
 
 
-#### 基础配置
+## 基础配置
 
 ```json
 "logo": {
@@ -16,7 +16,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - image : 网站图标
 
 
-#### 菜单配置
+## 菜单配置
 
 ```json
 "menu": {
@@ -32,7 +32,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - control : 菜单模式
 - select : 默认选中菜单项 (ID)
 
-#### 选项卡配置
+## 选项卡配置
 
 ```json
 "tab": {
@@ -52,7 +52,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - tabMax : 最大打开标签页数量
 - index: 主页初始化数据
 
-#### 主题配置
+## 主题配置
 
 ```json
 "theme": {
@@ -66,7 +66,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
 - allowCustom : 是否允许用户自行切换主题
 
-#### 颜色配置
+## 颜色配置
 
 ```json
 "colors": [
@@ -94,7 +94,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - id : 主题编号
 - color: 主题颜色
 
-#### 更多选项
+## 更多选项
 
 ```json
 "other": {
