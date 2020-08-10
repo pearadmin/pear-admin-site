@@ -65,8 +65,6 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
 - allowCustom : 是否允许用户自行切换主题
 
-## 颜色列表
-
 ```json
 "colors": [
 	{
@@ -93,7 +91,7 @@ Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适
 - id : 主题编号
 - color: 主题颜色
 
-## 更多选项
+## 其他配置
 
 ```json
 "other": {
