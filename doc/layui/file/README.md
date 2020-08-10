@@ -21,3 +21,5 @@
 > 组件扩展：`pear.js`  [查看](http://layui.pearadmin.com)。
 
 > 组件核心：`layui.js` [查看](http://layui.pearadmin.com)。
+
+> 配置文件：`pear.config.json` [查看](http://layui.pearadmin.com)。
