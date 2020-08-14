@@ -2,4 +2,4 @@
 
 问题 : 如何在子页面打开新的 Tab 标签页 ? 
 
-回答 : parent.layui.tab.addTabOnlyByElem("content",{id: "标识",title: "标题",url: "路径",close: ""})
+回答 : parent.layui.tab.addTabOnlyByElem("content",{id:"标识",title:"标题",url:"路径",close:"允许关闭"})
