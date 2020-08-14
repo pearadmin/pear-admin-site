@@ -5,7 +5,7 @@
     - [功能按钮](component/button)
     - [数据菜单](component/menu)
     - [多选项卡](component/tab)
-* [常见问题](index/)
+* [常见问题](question/)
 
 <div class="ew-doc-adv-list">
   
