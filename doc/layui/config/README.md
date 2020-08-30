@@ -1,5 +1,6 @@
-
 Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适合你的界面布局
+
+admin.reander() 函数在初始化时会读取 pear.config.json 配置文件构建框架
 
 
 ## 基础配置
