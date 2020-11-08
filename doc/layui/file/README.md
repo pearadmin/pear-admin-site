@@ -3,6 +3,7 @@
 * admin-------------------------资源文件
 * assets------------------------页面样式
 * component------------------核心组件
+    - code----------------------表单设计器源码
     - layui----------------------Layui 源码文件
     - pear----------------------Pear 扩展组件
 		- css----------------------Pear 扩展组件样式
@@ -16,10 +17,8 @@
 
 ## 核心文件
 
-> 公共样式：`pear.css` [查看](http://layui.pearadmin.com)。
+> 公共样式：`pear.css` [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/component/pear/css/pear.css)。
 
-> 组件扩展：`pear.js`  [查看](http://layui.pearadmin.com)。
+> 组件扩展：`pear.js`  [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/component/pear/pear.js)。
 
-> 组件核心：`layui.js` [查看](http://layui.pearadmin.com)。
-
-> 配置文件：`pear.config.json` [查看](http://layui.pearadmin.com)。
+> 配置文件：`pear.config.json` [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/pear.config.json)。

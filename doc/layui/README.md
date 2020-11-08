@@ -1,4 +1,8 @@
-## 更新日志  :id=download 
+## 更新日志  :id=download
+
+- 2020年11月9日 新增 admin.setConfigPath() 允许开发者自定义 pear.config.json 的读取路径
+
+- 2020年11月9日 菜单同时支持 async 异步接口方式 与 静态 JSON 数据模式
 
 - 2020年8月30日 主页 admin.reander(param) 新增 currentUser 参数
 
