@@ -1,5 +1,9 @@
 ## 更新日志  :id=download
 
+- 2020年11月9日 新增 convert cropper 类型转换 与 图片裁剪 组件
+
+- 2020年11月21日 新增头像上传示例，uploadProfile 页面
+
 - 2020年11月9日 新增 admin.setConfigPath() 允许开发者自定义 pear.config.json 的读取路径
 
 - 2020年11月9日 菜单同时支持 async 异步接口方式 与 静态 JSON 数据模式
