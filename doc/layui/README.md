@@ -1,6 +1,8 @@
 ## 更新日志  :id=download
 
-- 2020年11月9日 新增 convert cropper 类型转换 与 图片裁剪 组件
+- 2020年11月23日 新增 context 组件，用于获取上下文全局变量
+
+- 2020年11月21日 新增 convert cropper 类型转换 与 图片裁剪 组件
 
 - 2020年11月21日 新增头像上传示例，uploadProfile 页面
 
