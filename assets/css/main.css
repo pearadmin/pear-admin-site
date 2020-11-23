@@ -658,15 +658,8 @@ body .layui-util-face .layui-layer-content {
 .ew-header .layui-logo {
 	height: 70px;
 	line-height: 70px;
+	width: 180px!important;
 	display: inline-block;
-	font-size: 22px;
-	font-weight: 600;
-	color: #3EC483;
-	padding-left: 42px;
-	background-image: url("../images/logo3.png");
-	background-size: 32px;
-	background-position: 0 19px;
-	background-repeat: no-repeat;
 }
 
 /* nav */
@@ -1000,8 +993,6 @@ body .layui-util-face .layui-layer-content {
 .ew-banner {
 	color: #fff;
 	position: relative;
-	/* 
-    background-image: url("../images/homebg.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1017,17 +1008,14 @@ body .layui-util-face .layui-layer-content {
 }
 
 .ew-banner .ew-banner-right {
+	margin-top: -35px;
 	display: inline-block;
-}
-
-.ew-banner-right .show:hover {
-	box-shadow: 2px 0 5px rgba(0, 21, 41, .35);
 }
 
 
 .ew-banner>.layui-container {
 	text-align: center;
-	padding: 120px 0px 100px 15px;
+	padding: 120px 0px 80px 15px;
 }
 
 .ew-banner h1 {
@@ -1265,6 +1253,11 @@ body .layui-util-face .layui-layer-content {
 	background-color: #fff;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 	margin-bottom: 10px;
+}
+
+.ew-header .layui-nav>.layui-nav-item>a:after{
+	border-radius: 6px;
+	height: 4px;
 }
 
 .product-card .product-cover {
