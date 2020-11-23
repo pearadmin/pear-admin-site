@@ -12,6 +12,7 @@ layui.config({
     if ($('.ew-header').length > 0) {
         // 获取当前页面所有的导航id
         var navIds = [];
+		
         $('[nav-id]').each(function () {
             navIds.push($(this).attr('nav-id'));
         });
