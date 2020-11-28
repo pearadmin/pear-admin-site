@@ -17,8 +17,8 @@
 
 ## 核心文件
 
-> 公共样式：`pear.css` [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/component/pear/css/pear.css)。
+> 公共样式：`pear.css` [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/component/pear/css/pear.css)。
 
-> 组件扩展：`pear.js`  [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/component/pear/pear.js)。
+> 组件扩展：`pear.js`  [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/component/pear/pear.js)。
 
-> 配置文件：`pear.config.json` [查看](https://gitee.com/Jmysy/Pear-Admin-Layui/blob/master/pear.config.json)。
+> 配置文件：`pear.config.json` [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/pear.config.json)。
