@@ -1,10 +1,10 @@
 ## 配置文件
 
-Pear.config.json 框架配置文件，通过配置文件的修改，渲染出适合你的界面布局
+Pear.config.yml 框架配置文件，通过配置文件的修改，渲染出适合你的界面布局
 
-admin.reander() 函数在初始化时会读取 pear.config.json 配置文件构建框架
+admin.reander() 函数在初始化时会读取 pear.config.yml 配置文件构建框架
 
-> 默认读取 index.html 同级目录下的 `pear.config.json` 。
+> 默认读取 index.html 同级目录下的 `pear.config.yml` 。
 
 那么我们如何去自定义配置文件的读取路径
 
@@ -14,7 +14,7 @@ admin.reander() 函数在初始化时会读取 pear.config.json 配置文件构�
 
 ```javascript
 
-admin.setConfigPath("config/pear.config.json");
+admin.setConfigPath("config/pear.config.yml");
 
 admin.render();
 ```
@@ -27,11 +27,10 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 
 ## 基础配置
 
-```json
-"logo": {
-	"title": "Pear Admin",
-	"image": "admin/images/logo.png"
-	.....
+```yaml
+logo: 
+  title: "Pear Admin"
+  image: "admin/images/logo.png"
 }
 ```
 
@@ -41,14 +40,13 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 
 ## 侧边菜单
 
-```json
-"menu": {
-	"data": "admin/data/menu.json",
-	"accordion": true,
-	"control": false,
-	"select": "0",
-	"async": true
-	.....
+```yaml
+menu: 
+  data: "admin/data/menu.json"
+  accordion: true
+  control: false
+  select: "10"
+  async: true
 }
 ```
 
@@ -60,17 +58,15 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 
 ## 多选项卡
 
-```json
-"tab": {
-	"muiltTab": true,
-	"keepState": true,
-	"tabMax": 30,
-	"index": {
-		"id": "0",
-		"href": "view/console/console1.html",
-		"title": "首页"
-	}
-	.....
+```yaml
+tab: 
+  muiltTab: true
+  keepState: true
+  tabMax: "30"
+  index: 
+    id: "10" 
+    href: "view/console/console1.html" 
+    title: "首页" 
 }
 ```
 
@@ -81,12 +77,11 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 
 ## 主题配置
 
-```json
-"theme": {
-	"defaultColor": "2",
-	"defaultMenu": "dark-theme",
-	"allowCustom": true
-	.....
+```yaml
+theme: 
+  defaultColor: "2"
+  defaultMenu: "dark-theme"
+  allowCustom: true
 }
 ```
 
@@ -94,28 +89,18 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 - defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
 - allowCustom : 是否允许用户自行切换主题
 
-```json
-"colors": [
-	{
-		"id": "1",
-		"color": "#FF5722"
-	},
-	{
-		"id": "2",
-		"color": "#5FB878"
-	},
-	{
-		"id": "3",
-		"color": "#1E9FFF"
-	}, {
-		"id": "4",
-		"color": "#FFB800"
-	}, {
-		"id": "5",
-		"color": "darkgray"
-	}
-	.....
-]
+```yaml
+colors: 
+- id: "1"
+  color: "#FF5722"
+- id: "2"
+  color: "#5FB878"
+- id: "3"
+  color: "#1E9FFF"
+- id: "4"
+  color: "#FFB800"
+- id: "5"
+  color: "darkgray"
 ```
 
 - id : 主题编号
@@ -124,11 +109,7 @@ setConfigPath(..) 用于重新定义配置文件的存放位置
 ## 其他配置
 
 ```json
-"other": {
-	"keepLoad": 1200,
-	.....
-	.....
-	.....
-}
+other: 
+  keepLoad: "1200"
 ```
-- keepLoad : 主页加载时长
+- keepLoad : 主页动画加载时长

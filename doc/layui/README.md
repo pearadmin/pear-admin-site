@@ -1,25 +1,34 @@
-## 更新日志  :id=download
+## 更新日志   :id=log
 
-- 2020年11月28日 升级 Layui 依赖 2.5.7 版本
+> 当前版本：`layui 3.3.0.release`，更新于：`2020-12-06`，查看 [在线演示](http://layui.pearadmin.com)。
 
-- 2020年11月23日 新增 context 组件，用于获取上下文全局变量
 
-- 2020年11月21日 新增 convert cropper 类型转换 与 图片裁剪 组件
+#### 2020-12-06 （ 3.3.0.release ）   :id=log_315
 
-- 2020年11月21日 新增头像上传示例，uploadProfile 页面
+- [增加] 新增 yaml.js 解析组件，提供 yml 文件解析支持
+- [增加] 新增 http.js 异步请求模块，扩展原生 jquery.ajax 异常捕捉
+- [优化] 替换 json 配置文件为 yaml, 增加可读性
+- [优化] 调整 admin.css 部分样式
+- [优化] 升级 Layui 依赖至 2.5.7 版本
 
-- 2020年11月9日 新增 admin.setConfigPath() 允许开发者自定义 pear.config.json 的读取路径
+> 升级替换 component / pear 目录即可
 
-- 2020年11月9日 菜单同时支持 async 异步接口方式 与 静态 JSON 数据模式
+#### 2020-11-11 （ 3.2.5.release ）   :id=log_316
 
-- 2020年8月30日 主页 admin.reander(param) 新增 currentUser 参数
+- [新增] 新增 context 组件，用于获取上下文全局变量
+- [新增] 新增 convert cropper 类型转换 与 图片裁剪 组件
+- [新增] 新增头像上传示例，uploadProfile 页面
+- [新增] 新增 admin.setConfigPath() 允许开发者自定义 pear.config.json 的读取路径
+- [新增] 菜单同时支持 async 异步接口方式 与 静态 JSON 数据模式
 
-- 2020年8月17日 解决 树状表格 层级缩进
+> 升级替换 component / pear 目录即可
 
-- 2020年8月11日 优化 亮主题 侧边菜单的阴影大小
+#### 2020-10-01 （ 3.1.2.release ）   :id=log_317
 
-- 2020年8月11日 兼容 多系统菜单 移动端下显示效果
+- [优化] 解决 树状表格 层级缩进
+- [优化] 优化 light-theme 菜单主题的阴影大小
+- [优化] 兼容 多系统菜单 移动端下显示效果
+- [优化]  解决 Ajax 同步与浏览器 UI 渲染冲突
+- [新增] 新增 基础信息 与 空白布局 页面
 
-- 2020年8月11日 新增 基础信息 与 空白布局 页面
-
-- 2020年8月10日 解决 Ajax 同步与浏览器 UI 渲染冲突
+> 升级替换 component / pear 目录即可
