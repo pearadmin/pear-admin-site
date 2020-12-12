@@ -1,6 +1,6 @@
 ## 项目介绍  :id=start
 
-Pear Admin Layui 是一个快速，简介且高效的前端框架，使用 Layui 开发，通过简单的初始化配置，即可生成符合您项目需求的布局与样式，提供大量开箱即用的前端组件
+Pear Admin Think 基于 Thinkphp 6 的快速开发平台，通过简单的代码生成功能，即可快速构建你的功能业务，提供大量开箱即用的前端组件
 
 > 当前版本：`Release v1.0.0`，查看 [在线演示](http://192.144.214.203/admin.php/admin.login/index)。
  
