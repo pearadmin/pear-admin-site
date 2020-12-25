@@ -20,10 +20,16 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="countTime()">
 		<!-- header -->
 		<div class="ew-header">
-			<img class="layui-logo" src="assets/images/un5.svg" />
+			<img class="layui-logo" src="assets/images/un28.svg" style="height:50px;padding: 10px;" />
+			<div style="display: inline-block;font-size: 16px;position: absolute;height: 70px;line-height: 70px;">
+				<span id="_d">00</span> 
+				<span id="_h">00</span> 
+				<span id="_m">00</span> 
+				<span id="_s">00</span> 
+			</div>
 			<div class="ew-nav-group">
 				<div class="nav-toggle"><i class="layui-icon layui-icon-more-vertical"></i></div>
 				<ul class="layui-nav" lay-filter="ew-header-nav">
@@ -54,35 +60,35 @@
 						<img style="width: 25%;position: absolute;left: 38%;margin-top: 5px;" src="assets/images/admin.png"></h1>
 						<p style="font-size: 13.8px;font-weight: 500;margin-top: 10px;"> 开 箱 即 用 的 前 后 端 开 发 框 架 系 列 </p>
 						<div class="ew-banner-btngroup" style="margin-top: 50px;margin-bottom: 50px;">
-								<ul class="layui-nav" style="background-color: white;" lay-filter="ew-header-nav">
-									<li class="layui-nav-item">
-										<a target="_blank" href="https://gitee.com/pear-admin" class="layui-btn layui-btn-primary" nav-scroll="pricing">
-											<svg data-v-796d512c="" style="width:20px;position: relative;top: 5px;margin-right: 5px;" aria-hidden="true"
-											 focusable="false" data-prefix="fad" data-icon="meteor" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-											 class="svg-inline--fa fa-meteor fa-w-16 h-5 -mb-1 mr-1">
-												<g data-v-796d512c="" class="fa-group">
-													<path data-v-796d512c="" fill="currentColor" d="M491.14.7C452.44 12.3 379.34 35 303.44 62c-2.1-7-4-13.5-5.6-18.6a16.06 16.06 0 0 0-20-10.69 16.6 16.6 0 0 0-2.86 1.19C232.54 56 122.14 116.5 60.54 176.4c-1.1 1-2.5 2-3.5 3C-19 255.5-19 378.87 57.09 455s199.48 76 275.55-.1c1-1 2-2.4 3-3.5C395.44 389.8 456 279.3 478.14 237a16.05 16.05 0 0 0-6.64-21.72 15.52 15.52 0 0 0-2.86-1.18c-5.2-1.6-11.6-3.5-18.6-5.6 27-76 49.7-149 61.3-187.7A16.17 16.17 0 0 0 491.14.7zM191.94 448a128 128 0 1 1 128-128 128 128 0 0 1-128 128z"
-													 opacity="0.4" class="fa-secondary"></path>
-													<path data-v-796d512c="" fill="currentColor" d="M191.94 192a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm-32 128a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
-													 class="fa-primary"></path>
-												</g>
-											</svg>
-											Gitee 仓库</a>
-									</li>
-									<li class="layui-nav-item">
-										<a target="_blank" href="https://github.com/PearAdmin" class="layui-btn" nav-scroll="pricing">
-											<svg data-v-796d512c="" style="width:20px;position: relative;top: 5px;margin-right: 5px;" data-v-ef02ec52=""
-											 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" class="nui-svg nui-svg-gh inline-block h-6 -mt-1 mr-1">
-												<path data-v-796d512c="" data-v-ef02ec52="" fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path>
-											</svg>
-										    Github 仓库</a>
-									</li>
-								</ul>
+							<ul class="layui-nav" style="background-color: white;" lay-filter="ew-header-nav">
+								<li class="layui-nav-item">
+									<a target="_blank" href="https://gitee.com/pear-admin" class="layui-btn layui-btn-primary" nav-scroll="pricing">
+										<svg data-v-796d512c="" style="width:20px;position: relative;top: 5px;margin-right: 5px;" aria-hidden="true"
+										 focusable="false" data-prefix="fad" data-icon="meteor" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+										 class="svg-inline--fa fa-meteor fa-w-16 h-5 -mb-1 mr-1">
+											<g data-v-796d512c="" class="fa-group">
+												<path data-v-796d512c="" fill="currentColor" d="M491.14.7C452.44 12.3 379.34 35 303.44 62c-2.1-7-4-13.5-5.6-18.6a16.06 16.06 0 0 0-20-10.69 16.6 16.6 0 0 0-2.86 1.19C232.54 56 122.14 116.5 60.54 176.4c-1.1 1-2.5 2-3.5 3C-19 255.5-19 378.87 57.09 455s199.48 76 275.55-.1c1-1 2-2.4 3-3.5C395.44 389.8 456 279.3 478.14 237a16.05 16.05 0 0 0-6.64-21.72 15.52 15.52 0 0 0-2.86-1.18c-5.2-1.6-11.6-3.5-18.6-5.6 27-76 49.7-149 61.3-187.7A16.17 16.17 0 0 0 491.14.7zM191.94 448a128 128 0 1 1 128-128 128 128 0 0 1-128 128z"
+												 opacity="0.4" class="fa-secondary"></path>
+												<path data-v-796d512c="" fill="currentColor" d="M191.94 192a128 128 0 1 0 128 128 128 128 0 0 0-128-128zm-32 128a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
+												 class="fa-primary"></path>
+											</g>
+										</svg>
+										Gitee 仓库</a>
+								</li>
+								<li class="layui-nav-item">
+									<a target="_blank" href="https://github.com/PearAdmin" class="layui-btn" nav-scroll="pricing">
+										<svg data-v-796d512c="" style="width:20px;position: relative;top: 5px;margin-right: 5px;" data-v-ef02ec52=""
+										 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" class="nui-svg nui-svg-gh inline-block h-6 -mt-1 mr-1">
+											<path data-v-796d512c="" data-v-ef02ec52="" fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path>
+										</svg>
+										Github 仓库</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="layui-col-md6 layui-col-xs12">
 						<div class="ew-banner-right">
-							<img class="show" style="width: 92%;" style="margin-top: 20px!important;" src="assets/images/un13.svg">
+							<img class="show" style="width: 92%;" style="margin-top: 0px!important;" src="assets/images/un26.svg">
 						</div>
 					</div>
 				</div>
@@ -147,9 +153,19 @@
 								</div>
 							</div>
 							<div class="product-body" style="padding: 10px;">
-								<a href='https://gitee.com/pear-admin/Pear-Admin-Layui/stargazers'><img src='https://gitee.com/pear-admin/Pear-Admin-Layui/badge/star.svg?theme=white' alt='star'></img></a>
-								<a href='https://gitee.com/pear-admin/Pear-Admin-Layui/members'><img src='https://gitee.com/pear-admin/Pear-Admin-Layui/badge/fork.svg?theme=white' alt='fork'></img></a>
+								<a href='https://gitee.com/pear-admin/Pear-Admin-Layui/stargazers'><img src='https://gitee.com/pear-admin/Pear-Admin-Layui/badge/star.svg?theme=white'
+									 alt='star'></img></a>
+								<a href='https://gitee.com/pear-admin/Pear-Admin-Layui/members'><img src='https://gitee.com/pear-admin/Pear-Admin-Layui/badge/fork.svg?theme=white'
+									 alt='fork'></img></a>
 							</div>
+						</div>
+						<div style="height: 60x;width: 100%;margin-top: 20px">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/1611/4835367_Jmysy_1578975358.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/2813/8441097_Mavericke_1607797339.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/1755/5267877_jobin_jia_1608578025.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/296/890387_530521314_1578935057.png!avatar200" style=";border-radius: 50px;height: 50px;width: 55px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/637/1912670_minsishuju_1592314446.png!avatar60" style=";border-radius: 50px;height: 50px;width: 55px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/751/2254351_Luckytoo_1608041120.png!avatar60" style=";border-radius: 50px;height: 50px;width: 55px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
 						</div>
 					</div>
 					<div class="layui-col-md6 layui-col-sm6" style="padding: 45px;">
@@ -163,9 +179,22 @@
 								</div>
 							</div>
 							<div class="product-body" style="padding: 10px;">
-								<a href='https://gitee.com/pear-admin/pear-admin-ant/stargazers'><img src='https://gitee.com/pear-admin/pear-admin-ant/badge/star.svg?theme=white' alt='star'></img></a>
-								<a href='https://gitee.com/pear-admin/pear-admin-ant/members'><img src='https://gitee.com/pear-admin/pear-admin-ant/badge/fork.svg?theme=white' alt='fork'></img></a>
+								<a href='https://gitee.com/pear-admin/pear-admin-ant/stargazers'><img src='https://gitee.com/pear-admin/pear-admin-ant/badge/star.svg?theme=white'
+									 alt='star'></img></a>
+								<a href='https://gitee.com/pear-admin/pear-admin-ant/members'><img src='https://gitee.com/pear-admin/pear-admin-ant/badge/fork.svg?theme=white'
+									 alt='fork'></img></a>
 							</div>
+						</div>
+						<div style="height: 60x;width: 100%;margin-top: 20px">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/1611/4835367_Jmysy_1578975358.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/2813/8441097_Mavericke_1607797339.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="https://portrait.gitee.com/uploads/avatars/user/1755/5267877_jobin_jia_1608578025.png!avatar200" style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADJ0lEQVRoQ+2YW0gUYRiG39ndWffouisSYQkdTMVIKApEO1FBiphhQihS6Y1ZhJ1MQdRCyJYiiTJvFLpYI9KoiAopDDKowAsvIkqK8IAhntd1TzM7MSMK5tLvheE/8s/l8i3zPt/zzs8w3FBWuoRVfHEMUOV2mUGVCwQzyAxSvgFWUcoFEeMxg8QVUT7ADFIuiBiPGSSuiPIBZpByQcR4y2bQUdcAfcqO+RuKQwMYv1oOYbCfGMKUeRTWU6fBGYzKrND/CyOlhcT/LWXgvwFKPh/cD5ow86KdmCPqcg0Muw8AHKceQDmp7/1bTDhr/wmoi10Pe40T2rXr5ufoNiiKkIQguAgDllJTU1YurCdKwPE8JFEEp9fTXVEZTuj9Bj4xGZLfT6xpVHmtUk9xZBicVgeN3UE/oK+zA4a0feBMZvg/dWG8rjJsTfn4JERVXIM2Zg38nz9AtzkB2ugY+gE97a0wpO6BLm4DxOHfmKivRrD36yJIc24+LPlFQCgET5sLxowjKgFscylBjQczIQUDmG5tgQz992WvdiJiZyqEwT64WxoRWXpRPYDCQB8iS85DY7GGrSmfkAz5+ZPr6X3zEt53HbBdqFIPoOfJQzjq74LfGB+2pua8QliOn4QU8GOq6TZC46PqApx2NSuVMx3OhhQMLqrpXD2DP3sxVnEWfHyi+gANew+Fral+2/ZZGEc0Zl4/x1TjLcz/popTtM0F2SBnNIWtqaWgGOZjBZC8Xkw13oSvq1OdgPKpKR80psycBTWVn019cgqCP75jtKxYOVxVaVAObkjfj8jSS9BYI5XTdObVM9jKKqGx2uB5/hjulnvqBpTTRzc0g9+0RTlNZUhTRg5CHjcm79xQ3mBUbXBBTf0BiKPD0MXGIfClRzk95y7VVlQGiNiVBtu5K9DY7LM8ggDP00fKi/iqAFRq6rwPPmmrwhOaGMNkw3X4uz+uHkBr0RmYs/MArRaBnm6MVZUteDWlvqLE7xIrNLBs32RWKD/xtgyQuCLKB5hBygUR4zGDxBVRPsAMUi6IGI8ZJK6I8gFmkHJBxHjMIHFFlA8wg5QLIsb7A/fKd2csae+4AAAAAElFTkSuQmCC"
+							 style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAEGUlEQVRoQ+1afWhNcRh+zrn37rq77Nq1D5sxjbKWNLFIPhKSUCQioUVE/lAkRIh8RRHloyT8oUiUFTLJ5iMtWZLIiG3s4+7D3d113W+9p35ztp37cXYOO/S7f+689/ye533e3/M+tyZMPPchiv/4I3CC/7i6XMF/XEBwBbmCBu8AH1GDC5QQHlcwYYsMXsAVNLhACeFxBRO2yOAFXEGDC5QQHlcwYYsMXqBJwbMLh2Firg3BSBRXq7/jbFVrTLon5uZg+ki79NwbiOD4sxaUve9QrE+1iLi0OA8F6SnoDERwtNKFezWePrVSE8HtUzOxpMgBUQAefOzErvJGRRBFmVYcmTMUOYMs0vNIFLj51o1jT1yK9dPy7dg9IwtOmwl17iC23P2GWnfw7xNcMCYN26ZkwJ4ioqYtgBU3ahVBLBvrwOZJQ2A1iYhGozCJAt61+LHqZp1i/YYSJ9YUp8MiCqj47MXW+w19Ikdf0qTgCIcFJ+flYrjDgjZfGAcfN6Pyi7cXmD0zsrCwMA0efxj1HSGQovHqD80eijmjBkqjf7m6Heer2vqHIJ3K7pY/FMWFl224Ut3eC8zVJcNRmGHF5+8BPK39geVjHYgAiuDl9y9eE5JlrElBOmRjyRCsKh4MsyjgzrsOHHjc3O1s+X2icbv7wYOd0zORZjUpjp+8Pt4Y/zWCswsGdgF+3fQTa2/Xdzub3Sf6I40buS1zSCUDWTfBidLx6bCYlBuWLDFWp1lB+Ug1e0PY/bAJrxp8XTjYCMvHjd0xpXXBnvlCEZx50Yrrb9xqOXWr10yQ3hYLlNyE5OquLk7H+glOSaWe6+La0hEY7UxBgyeIHQ8a8dbl73+CsQCzNWKziN2IlAyzYf/MbGTazZATl9+/qq8+bCr7qomc5jXBTo8FjAUBX7B3crm4KA/jsgfA5Q1h76MmECHWKLMIXHvjxqnnLcYgSCjYKpAbByOhZCaMfDD8e72wUe/wh3G4woXyT53GIciWORkHZcdWX6hrDJXSiDwFsZjHmvSpPYDSW/X4EaRtqe2ji8kQBBbHaB/SKqAUQnYvCMoLXW5AtO/IMffNzEJGqjlurlVLVzeC43NsODgrG1l2s7TA/eGoFLfipRG2Qmi9lL33YOW4wRL+WIlILTndTIYdzO4cBW/6kN0nE6rpHr785sPUfDtaZKbTF0I9v6ObgvRiZhz0G45+QtGvDKX41tN9B1lFuH+GpfHUI57JSepKUG4cdEgyaYQZC9XTf0PEa0hfFNWVoNw4CEwyaYS5r5BkQ9SS1JUgHX56fi4m56VKOJJJI8x9bWYxqYb0O0G1AP50ve4K/mnAat/PCartmNHquYJGU0QtHq6g2o4ZrZ4raDRF1OLhCqrtmNHquYJGU0QtHq6g2o4Zrf4XH3qWp3dZnRkAAAAASUVORK5CYII="
+							 style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAADUElEQVRoQ+1XS08TURg9UyhvFFEkWKSIvKRUC6EhgkEFfC7cuECjC43GxAWYsPJHqAuNiYkaXWiiC12YSKISgoliSJWHWEWURxDEF/iASmlLx9ypheFRZ0bmTgZyZ9U0373fOd/5zv3u5S4frOOxhD+OEVzk6jIFF7mAYAoyBXVeAdaiOhdIEh5TULJEOg9gCupcIEl4TEHJEuk8gCmoc4Ek4amq4OrMBGyvtiE+KRo8z6O7aQiNF9v/CcIYFY7K2kKYLCuFuJ7mITScb5MELjdAVYIk6YbKNNgP5CAiJhw+zyRa775H+72ekHiKD+fCsisdhjAOI/2jaLjQhh+DY3LxS8apTpBk3HpyIzJL14AzcHANu/H40kt8dA7PARMoRjYiYowY/+XB06uv0Of4LAlaSQAVgstTYlFRU4BEczzAA4POYdSfa4HX7ZvCJm7nSa8fHXW9eH67Swl2WbFUCJLM6fZklB7LR/SyCPh9fnTc74XjL4HZvutv/YKHZ17IAqw0iBpBAqSoKhvWvesQZjTMaMGSI3mCV0kL0/CduAhUCc5QigO+9fzE28aBKd9NjHnRdM2J7mdDSoWRHU+VIEEh9pp/kod33IfIOCNo+k4zBYOJLLvNsFflIDwyLPAXD9D0neYEScIdtYUwFyULud2jHjy5ov5ImK9vqbfo9PAPzLuggvONDtnGUhBInWCCKQ4VpwqwIjUOxIO8nxdOVfLb+aAPzTc6FcBVHkqV4OxTlNxmyFjI22kWrmYTLi+ab3aiq3FAOXKZK6gSFM9B14hb8N2nzu/Tl2sOi3cOZm9LRfGhXETGBkYCuXC33Hkn1H2tLQlbjucjNjFK9qtDpmBzwqgoSHxXXm1DYlp8SAKF+7OwaV+G4Ec5rw5dEdxz2g6TdRUg0YLlNTZkFKcIccEW/tD29X+5zLtOdQXFvpM6RMQnLEFHDqFHZ2e+OhbKVlWC6zenoOSoRbiKzX5BhAIqfhOSEfKmvh9N118vlNfUetUIin0X6g0YCnXZCSuyykzC68Lz2wvHrS6BqBqfagTVAENjD0aQRlW13JMpqGW1aeRiCtKoqpZ7MgW1rDaNXExBGlXVck+moJbVppGLKUijqlruyRTUsto0ci15Bf8AqXTRQJuU/8kAAAAASUVORK5CYII="
+							 style=";border-radius: 50px;height: 50px;width: 50px;    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05) !important;margin-right: 24px;">
 						</div>
 					</div>
 				</div>
@@ -298,16 +327,44 @@
 				var form = layui.form;
 				var jquery = layui.jquery;
 			});
-			
 		</script>
 		<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?c135516339e1fdab9fbcf956fedb4014";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?c135516339e1fdab9fbcf956fedb4014";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<script>
+			function countTime() {
+				//获取当前时间  
+				var date = new Date();
+				var now = date.getTime();
+				//设置截止时间  
+				var str = "2021/01/01 00:00:00";
+				var endDate = new Date(str);
+				var end = endDate.getTime();
+
+				//时间差  
+				var leftTime = end - now;
+				//定义变量 d,h,m,s保存倒计时的时间  
+				var d, h, m, s;
+				if (leftTime >= 0) {
+					d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+					h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+					m = Math.floor(leftTime / 1000 / 60 % 60);
+					s = Math.floor(leftTime / 1000 % 60);
+				}
+				//将倒计时赋值到div中  
+				document.getElementById("_d").innerHTML = d + "天";
+				document.getElementById("_h").innerHTML = h + "时";
+				document.getElementById("_m").innerHTML = m + "分";
+				document.getElementById("_s").innerHTML = s + "秒";
+				//递归每秒调用countTime方法，显示动态时间效果  
+				setTimeout(countTime, 1000);
+			}
 		</script>
 	</body>
 </html>
