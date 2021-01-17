@@ -1,25 +1,15 @@
-## 项目介绍  :id=start
+## 设置启动项目  :id=setup
+选择PearAdminAbpTemplateAdmin作为启动项目
+![配置文件](README_files/4.png)
 
-Pear Admin Abp 基于 AspNetBoilerplate 的快速开发平台，使用Layui作为前端呈现，封装常用的功能。旨在设计快速入手，快速实践框架。
+## 设置链接字符串  :id=connection
+在appsetting.json中设置连接字符串
+![配置文件](README_files/1.png)
+![连接字符串](README_files/2.png)
 
-> 当前版本：`Release v1.1.0`，查看 [在线演示](http://net.pearadmin.com)。
- 
-![开始使用](README_files/2.png)
+## 执行数据库迁移  :id=migratioin
+包管理控制台选择默认项目并执行迁移
+![执行迁移](README_files/3.png)
 
-
-## 下载使用  :id=download
-
-
-#### 1. 官网地址
-
-官网提供稳定版本的 Release 发行版本 [前往](http://www.pearadmin.com)
-
-![官方网址](README_files/1.png)
-
-#### 2. 源码仓库
-
-如果你需要最新代码，请前往 Gitee 仓库 [前往](https://gitee.com/pear-admin/pear-admin-abp.git)
-
-![源码仓库](README_files/3.png)
-
-
+## 启动项目  :id=start
+VS直接启动项目即可

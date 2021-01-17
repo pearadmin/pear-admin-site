@@ -1,3 +1,3 @@
-* [开始使用](start/?id=import)
-* [项目结构](index/)
-* [项目启动](admin/)
+* [开始使用](introduce/)
+* [项目结构](architecture/)
+* [项目启动](start/)
