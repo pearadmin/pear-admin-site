@@ -1,8 +1,8 @@
 ## 项目介绍  :id=start
 
-Pear Admin Abp 基于 AspNetBoilerplate 的快速开发平台，通过代码生成，系统权限模块，即可快速构建你的功能业务。
+Pear Admin Abp 基于 AspNetBoilerplate 的快速开发平台，使用Layui作为前端呈现，封装常用的功能。旨在设计快速入手，快速实践框架。
 
-> 当前版本：`Release v1.0.3`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`Release v1.1.0`，查看 [在线演示](http://net.pearadmin.com)。
  
 ![开始使用](README_files/2.png)
 
@@ -20,6 +20,6 @@ Pear Admin Abp 基于 AspNetBoilerplate 的快速开发平台，通过代码生�
 
 如果你需要最新代码，请前往 Gitee 仓库 [前往](https://gitee.com/pear-admin/pear-admin-abp.git)
 
-![源码仓库](README_files/2.jpg)
+![源码仓库](README_files/3.png)
 
 
