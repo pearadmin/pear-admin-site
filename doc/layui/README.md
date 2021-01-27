@@ -12,6 +12,8 @@
 - [优化] 配置文件兼容 yml / json 两种格式，通过 admin.setConfigType 切换解析方式
 - [修复] 修复 iusses 部分提交问题
 
+> 升级替换 component / pear 目录即可
+
 #### 2020-12-06 （ 3.3.0.release ）   :id=log_315
 
 - [增加] 新增 yaml.js 解析组件，提供 yml 文件解析支持
