@@ -1,7 +1,16 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.3.0.release`，更新于：`2020-12-06`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.5.7.release`，更新于：`2021-01-25`，查看 [在线演示](http://layui.pearadmin.com)。
 
+
+#### 2021-01-25 （ 3.5.5.release ）   :id=log_315
+
+- [增加] 新增全局主题，IFRAME 内部页面主页色跟随
+- [增加] 新增选项卡记忆，可通过配置文件开启关闭
+- [增加] 新增顶部栏主题跟随，可通过配置文件 autoHead 属性开启
+- [优化] 将主题代码独立于 admin.js, 命名为 theme.js 模块，保证单一职责
+- [优化] 配置文件兼容 yml / json 两种格式，通过 admin.setConfigType 切换解析方式
+- [修复] 修复 iusses 部分提交问题
 
 #### 2020-12-06 （ 3.3.0.release ）   :id=log_315
 
