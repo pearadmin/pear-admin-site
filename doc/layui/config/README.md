@@ -62,6 +62,7 @@ menu:
 tab: 
   muiltTab: true
   keepState: true
+  session: true
   tabMax: "30"
   index: 
     id: "10" 
@@ -74,6 +75,7 @@ tab:
 - keepState : 选项卡切换时，是否刷新页面
 - tabMax : 最大打开标签页数量
 - index: 主页初始化数据
+- session: 存储记忆，刷新浏览器时是否保持打开 Tab
 
 ## 主题配置
 
