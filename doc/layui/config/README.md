@@ -14,9 +14,10 @@ admin.reander() 函数在初始化时会读取 pear.config.yml 配置文件构�
 
 ```javascript
 
+admin.setConfigType("yml");
 admin.setConfigPath("config/pear.config.yml");
-
 admin.render();
+
 ```
 
 setConfigPath(..) 用于重新定义配置文件的存放位置
@@ -52,9 +53,9 @@ menu:
 
 - data : 菜单数据
 - accordion : 是否开启菜单手风琴
-- control : 菜单模式
+- control : 菜单模式 false 为常规菜单，true 为多系统菜单
 - select : 默认选中菜单项 (ID)
-- async: 渲染模式
+- async: 渲染模式，true 为异步接口的方式, false 为静态数据
 
 ## 多选项卡
 
@@ -89,7 +90,7 @@ theme:
 
 - defaultColor : 默认主题
 - defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
-- allowCustom : 是否允许用户自行切换主题
+- allowCustom : 是否允许用户自行切换主题，为 false 时，缓存主题失效，强制使用配置主题
 
 ```yaml
 colors: 

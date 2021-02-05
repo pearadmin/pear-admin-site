@@ -9,9 +9,7 @@ Context 组件提供了对全局变量的存储功能，你可以在任何页面
 
 ```javascript
 layui.use(['context'],function(){
-	
 	const context = layui.context;
-	
 	context.put("username","Jmys")
 })
 ```
@@ -20,9 +18,7 @@ layui.use(['context'],function(){
 
 ```javascript
 layui.use(['context'],function(){
-	
 	const context = layui.context;
-	
 	var username = context.get("username")
 })
 ```

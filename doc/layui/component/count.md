@@ -9,7 +9,6 @@ Count 组件对数字类型的文本提供了滚动效果
 
 ```javascript
 layui.use(['count'],function(){
-	
 	const count = layui.count;
 	
 	count.up("number", {

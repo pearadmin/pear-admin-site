@@ -9,7 +9,6 @@ Button 组件, 为按钮元素提供加载效果
 
 ```javascript
 layui.use(['button'],function(){
-	
 	const button = layui.button;
 	
 	button.load({
