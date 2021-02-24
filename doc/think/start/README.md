@@ -22,4 +22,6 @@ Pear Admin Think 基于 Thinkphp 6 的快速开发平台，通过简单的代码
 
 ![源码仓库](README_files/2.jpg)
 
+![](README_files/3.jpg)
+
 
