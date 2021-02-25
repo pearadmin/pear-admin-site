@@ -12,7 +12,7 @@
 - [优化] 用户管理 -> 部门树 -> 样式定义
 - [优化] 排除多余依赖，Hutool-core ..等
 
-> 前往下载 ：[pear-admin-boot 1.2.7.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.3.5.RELEASE)
+> 前往下载 ：[pear-admin-boot 1.3.5.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.3.5.RELEASE)
 
 #### 2021-01-15 （ 1.2.7.release ）   :id=log_315
 
