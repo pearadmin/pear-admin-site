@@ -4,6 +4,7 @@
 * [框架菜单](menu/)
 * [常用组件](javascript:;)
     - [功能按钮](component/button)
+	- [字体图标](component/icon)
     - [全局变量](component/context)
 	- [数字滚动](component/count)
     - [Yaml支持](component/yaml)
