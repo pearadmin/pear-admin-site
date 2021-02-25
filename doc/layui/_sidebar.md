@@ -7,6 +7,7 @@
     - [全局变量](component/context)
 	- [数字滚动](component/count)
     - [Yaml支持](component/yaml)
+	- [哈希加密](component/hash)
 * [常见问题](question/)
 
 <div class="ew-doc-adv-list">
