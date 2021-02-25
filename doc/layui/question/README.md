@@ -15,3 +15,11 @@
 问题 : 如何在顶级页面关闭当前 Tab 标签页 ?
 
 回答 : layui.tab.delCurrentTabByElem("content",callback())
+
+
+## ISS 环境
+
+问题 : 在 ISS 中无法正常启动
+
+回答 : 项目默认使用 yml 配置文件，ISS 默认不支持 YML / MIME 类型，需要额外配置
+
