@@ -1,6 +1,18 @@
 ## 更新日志   :id=log
 
-> 当前版本：`boot 1.2.7.release`，更新于：`2021-01-15`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`boot 1.3.5.release`，更新于：`2021-02-24`，查看 [在线演示](http://boot.pearadmin.com)。
+
+#### 2021-02-24 （ 1.3.5.release ）   :id=log_315
+
+- [修复] 修复定时任务实体，因 DevTool 依赖类型转换问题
+- [修复] 修复 Layui-layer-btn 主题跟随
+- [修复] 修复代码生成配置修改页，选项卡无法关闭问题
+- [优化] 优化 Monitor 系统监控线程阻塞时长，优化响应
+- [优化] 启用本地静态资源缓存，优化响应速度
+- [优化] 用户管理 -> 部门树 -> 样式定义
+- [优化] 排除多余依赖，Hutool-core ..等
+
+> 前往下载 ：[pear-admin-boot 1.2.7.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.2.7.RELEASE)
 
 #### 2021-01-15 （ 1.2.7.release ）   :id=log_315
 
