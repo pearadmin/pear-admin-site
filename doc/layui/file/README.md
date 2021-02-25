@@ -21,4 +21,6 @@
 
 > 组件扩展：`pear.js`  [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/component/pear/pear.js)。
 
-> 配置文件：`pear.config.json` [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/config/pear.config.yml)。
+> 配置文件：`pear.config.json` [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/config/pear.config.json)。
+
+> 配置文件：`pear.config.yml` [查看](https://gitee.com/pear-admin/Pear-Admin-Layui/blob/master/config/pear.config.yml)。

@@ -20,7 +20,9 @@ admin.render();
 
 ```
 
-setConfigPath(..) 用于重新定义配置文件的存放位置
+setConfigPath(..) 用于自定义配置文件的存放位置
+
+setConfigType(..) 用于自定义配置文件的类型 [yml/json]
 
 
 接下来，我们来看配置文件的配置信息都有哪些
