@@ -45,7 +45,7 @@ npm install --registry=https://registry.npm.taobao.org
 npm run servey-dev
 # 或者
 # 以生成环境启动项目
-npm run serve-dev
+npm run serve-prod
 ```
 
 启动项目成功后会自动打开浏览器访问 http://localhost:8080  你看到下面的页面就代表操作成功了。
