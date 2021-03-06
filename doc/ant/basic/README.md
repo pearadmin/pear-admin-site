@@ -48,7 +48,7 @@ npm run servey-dev
 npm run serve-dev
 ```
 
-启动项目成功后会自动打开浏览器访问 http://localhost:8080， 你看到下面的页面就代表操作成功了。
+启动项目成功后会自动打开浏览器访问 http://localhost:8080  你看到下面的页面就代表操作成功了。
 
 ![安装成功](README_files/3.jpg)
 
