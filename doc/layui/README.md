@@ -4,13 +4,15 @@
 > 
 #### 2021-02-24 （ 3.6.3.release ）   :id=log_315
 
-- [新增] 新增全局主题，IFRAME 内部页面主页色跟随
-- [新增] 新增选项卡记忆，可通过配置文件开启关闭
-- [新增] 新增顶部栏主题跟随，可通过配置文件 autoHead 属性开启
-- [优化] 将主题代码独立于 admin.js, 命名为 theme.js 模块，保证单一职责
-- [优化] 配置文件兼容 yml / json 两种格式，通过 admin.setConfigType 切换解析方式
-- [修复] 修复 iusses 部分提交问题
-- [修复] 修复 area 组件多实例隔离问题
+- [修复] 修复 layui-layer-btn 样式, 提供主题色跟随
+- [修复] 修复 area 省市级联组件多实例数据隔离问题
+- [修复] 修复选项卡关闭，select 节点错乱问题
+- [修复] 修复 tab 与 menu 联动问题
+- [修复] 修复单页面模式下 refresh 全局刷新问题
+- [优化] 优化 layui.msg() 窗体细节，全局适配
+- [优化] 重构 Button 按钮样式，提供全新的色彩搭配
+- [新增] 提供 layui.frame.change.. 方法，提供多视图与单页面下的兼容跳转
+- [新增] 升级 layui.table，新增 Table 下拉 Dome
 
 > 升级替换 component / pear 目录即可
 
