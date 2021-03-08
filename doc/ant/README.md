@@ -16,4 +16,4 @@
 - [修复] 修复 comp 布局菜单图标不显示问题
 - [依赖] 排除无关引用,升级 ant 2.0.0 版本
 
-> 升级
+> 前往下载 ：[pear-admin-ant 1.3.0.Release](https://gitee.com/pear-admin/pear-admin-ant/releases/1.3.0.RELEASE)
