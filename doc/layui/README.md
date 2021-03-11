@@ -1,7 +1,23 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.6.3.release`，更新于：`2021-02-24`，查看 [在线演示](http://layui.pearadmin.com)。
-> 
+> 当前版本：`layui 3.6.5.release`，更新于：`2021-03-11`，查看 [在线演示](http://layui.pearadmin.com)。
+
+#### 2021-03-11 （ 3.6.5.release ）   :id=log_315
+
+- [新增] 新增 Tab 框架右击操作菜单
+- [新增] 新增 Menu 数据请求方式自定义，支持 GET / POST
+- [新增] 新增 Admin.logout 方法，提供自定义注销实现，返回值 true / false
+- [新增] 新增 Admin.setAvatar 方法，提供主页用户信息初始化 src 头像 str 用户名
+- [新增] 新增 Common.isModile() 方法，提供客户端判断，true 移动端 false 电脑端
+- [修复] 修复表格页面，搜索模块边距偏移
+- [修复] 修复 权限管理 批量删除失败
+- [修复] 修复 "成功","失败"输入框的边框样式失效
+- [修复] 修复手机版本适配问题
+- [修复] 修复 popup.js 的warning错误
+- [优化] 删除多余 Json 文件 Document.json / Route.json
+
+> 升级替换 component / pear 目录即可
+
 #### 2021-02-24 （ 3.6.3.release ）   :id=log_315
 
 - [修复] 修复 layui-layer-btn 样式, 提供主题色跟随

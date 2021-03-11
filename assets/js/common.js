@@ -61,10 +61,14 @@ layui.config({
         util.fixbar({
             bgcolor: '#3EC483',
             bar1: '&#xe606;',
+			bar2: '&#xe68c;',
             click: function (type) {
                 if (type == 'bar1') {
                     window.open('http://qm.qq.com/cgi-bin/qm/qr?k=wguN0SYYFVTX9K-5Muf36E_J77bCzdDD&authKey=Ye5voDJGOphYUvypWJHOEyHoYBcgzk1l7djAS4fWcmls1jybLnYjwLrzwsS6Jdo3&group_code=682110771');
                 }
+				if(type == 'bar2') {
+					
+				}
             }
         });
     }
