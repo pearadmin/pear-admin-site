@@ -12,6 +12,7 @@
 ```json
 "menu": {
 	"data": "admin/data/menu.json",
+	"method": "GET",
 	"accordion": true,
 	"control": false,
 	"select": "0",
@@ -21,6 +22,7 @@
 ```
 
 - data : 菜单数据
+- method : 请求方式 GET / POST
 - accordion : 是否开启菜单手风琴
 - control : 菜单模式
 - select : 默认选中菜单项 (ID)
