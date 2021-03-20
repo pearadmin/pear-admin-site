@@ -1,6 +1,20 @@
 ## 更新日志   :id=log
 
-> 当前版本：`boot 1.3.5.release`，更新于：`2021-02-24`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`boot 1.4.0.release`，更新于：`2021-03-14`，查看 [在线演示](http://boot.pearadmin.com)。
+
+#### 2021-03-14 （ 1.4.0.release ）   :id=log_315
+
+- [新增] 新增 message 组件
+- [新增] 新增 Tab 框架右击操作菜单
+- [新增] 新增 admin.logout 接口
+- [新增] 新增用户站内消息
+- [新增] 新增系统设置 保存权限限制
+- [修复] 修复注销 Tab 记忆不清空问题
+- [修复] 修复 Mail:data 列表权限错误
+- [修复] 修复部分组件主题不跟随问题
+- 
+> 前往下载 ：[pear-admin-boot 1.4.0.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.4.0.RELEASE)
+
 
 #### 2021-02-24 （ 1.3.5.release ）   :id=log_315
 
