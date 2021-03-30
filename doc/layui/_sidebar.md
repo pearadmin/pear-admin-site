@@ -11,6 +11,9 @@
 	- [哈希加密](component/hash)
 * [常见问题](question/)
 
+
 <div class="ew-doc-adv-list">
-  
+    <a class="ew-doc-adv-item" href="https://www.zzzyun.com" target="_blank">
+        <img src="image/1.png"/>
+    </a>
 </div>
