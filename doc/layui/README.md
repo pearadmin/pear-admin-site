@@ -2,6 +2,21 @@
 
 > 当前版本：`layui 3.6.5.release`，更新于：`2021-03-11`，查看 [在线演示](http://layui.pearadmin.com)。
 
+#### 2021-04-01 （ 3.7.6.release ）   :id=log_315
+
+- [新增] 新增 Admin.jump（）函数，提供不同模式下的兼容性跳转
+- [修复] 修复 layui-form-danger 样式优先级过低，导致无法正常显示
+- [修复] 修复 多系统 模式下，顶部菜单默认不选中问题
+- [修复] 修复 全屏样式，新增 F11 全屏监听
+- [优化] 优化 tinymce 初始化缓慢问题
+- [依赖] 升级 layui 至 2.6.1 最新版本
+- [依赖] 升级 echarts 至 5.0.2 最新版本
+- [依赖] 升级 tinymce 编辑器至 5.6.2 版本
+- [变更] 移除 dropdown 组件，因 layui 2.6.0 提供
+- [变更] 移除 pear.all.css / pear.all.js 文件，简化代码结构
+
+> 升级替换 component / pear 目录即可
+
 #### 2021-03-11 （ 3.6.5.release ）   :id=log_315
 
 - [新增] 新增 Tab 框架右击操作菜单
