@@ -15,4 +15,7 @@
     <a class="ew-doc-adv-item" href="https://www.chamaoyun.com/server/buy.html" target="_blank">
         <img src="image/茶猫云.png"/>
     </a>
+	<a class="ew-doc-adv-item" href="javascript:void(0);" target="_blank">
+	    <div class="wwads-cn wwads-horizontal" data-id="73" style="max-width:295px"></div>
+	</a>
 </div>
