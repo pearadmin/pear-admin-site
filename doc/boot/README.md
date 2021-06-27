@@ -15,7 +15,7 @@
 - [依赖] 升级 Spring boot 依赖至 2.4.4 版本
 - [优化] 开启本地缓存，优化前端组件资源的构建速度
 - [优化] 简化 Sql 文件大小，清理冗余数据
- - 
+  
 > 前往下载 ：[pear-admin-boot 1.4.8.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.4.8.RELEASE)
 
 #### 2021-03-14 （ 1.4.0.release ）   :id=log_315
