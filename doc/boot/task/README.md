@@ -1,4 +1,4 @@
-### 任务
+### 定时任务
 
 对于简单的定时任务用 Spring的 @Scheduled 注解即可，如需要动态管理定时任务就需要使用到 Quartz。本系统的动态定时任务源码位于  pear-modules -> pear-schedule，使用流程如下
 
