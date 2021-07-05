@@ -1,19 +1,50 @@
 ## 项目结构  :id=config
 
-* admin-------------------------资源文件
-* assets------------------------页面样式
-* component------------------核心组件
-    - code----------------------表单设计器源码
-    - layui----------------------Layui 源码文件
-    - pear----------------------Pear 扩展组件
-		- css----------------------Pear 扩展组件样式
-			- pear.css-----------------Pear 组件样式引用文件
-		- modules----------------------Pear 扩展组件脚本
-		- pear.js----------------------Pear 组件脚本引用文件
-* view--------------------------页面示例
-* index.html------------------框架主页
-* login.html-------------------登录页面
-* pear.config.json-----------配置文件
+
+```
+Pear Admin Layui
+│
+├─admin 资源
+│	│
+│	├─css 样式
+│	│
+│	├─data 数据
+│	│
+│	└─images 图片
+│
+├─component 组件
+│	│
+│	├─code 设计器
+│	│
+│	├─layui 框架
+│	│
+│	└─pear 封装
+│
+├─config 配置
+│	│
+│	├─pear.config.yml 配置文件
+│	│
+│	└─pear.config.json 配置文件
+│
+├─view 视图
+│	│
+│	├─console 首页
+│	│
+│	├─document 文档
+│	│
+│	├─echarts 图表
+│	│
+│	├─error 错误页
+│	│
+│	├─result 结果页
+│	│
+│	└─system 系统管理
+│
+├─index 入口
+│
+└─login 登录
+
+```
 
 ## 核心文件
 
