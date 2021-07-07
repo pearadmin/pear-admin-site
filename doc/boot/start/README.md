@@ -2,7 +2,7 @@
 
 Pear Admin Boot 基于 Spring Boot 2.0 的快速开发平台，通过代码生成，系统权限模块，即可快速构建你的功能业务。
 
-> 当前版本：`Release v1.4.8`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`Release v1.5.0`，查看 [在线演示](http://boot.pearadmin.com)。
  
 ![开始使用](README_files/2.png)
 

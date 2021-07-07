@@ -15,7 +15,7 @@
 - [依赖] 升级 Spring boot 2.4.4 版本
 - [依赖] 升级 layui 2.6.8 版本
   
-> 前往下载 ：[pear-admin-boot 1.4.8.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.4.8.RELEASE)
+> 前往下载 ：[pear-admin-boot 1.5.0.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.5.0)
 
 #### 2021-03-14 （ 1.4.0.release ）   :id=log_315
 
