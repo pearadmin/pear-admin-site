@@ -11,10 +11,12 @@
 
 ```json
 "menu": {
+	"collaspe": false,
 	"data": "admin/data/menu.json",
 	"method": "GET",
 	"accordion": true,
 	"control": false,
+	"controlWidth": 500,
 	"select": "0",
 	"async": false
 	.....
@@ -22,9 +24,11 @@
 ```
 
 - data : 菜单数据
+- collaspe: 默认状态
 - method : 请求方式 GET / POST
 - accordion : 是否开启菜单手风琴
 - control : 菜单模式
+- controlWidth : 多系统模式下，顶部菜单宽度
 - select : 默认选中菜单项 (ID)
 - async: 渲染模式 true 接口方式 false 静态数据模式
 

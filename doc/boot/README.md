@@ -1,20 +1,19 @@
 ## 更新日志   :id=log
 
-> 当前版本：`boot 1.4.8.release`，更新于：`2021-06-10`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`boot 1.5.0.release`，更新于：`2021-07-06`，查看 [在线演示](http://boot.pearadmin.com)。
 
-#### 2021-06-10 （ 1.4.8.release ）   :id=log_315
+#### 2021-07-06 （ 1.5.0.release ）   :id=log_315
 
-- [新增] 兼容 Mysql 5.3.2+ 版本，支持 Mariadb
+- [新增] 新增 icon 30 图标
+- [修复] Notice 组件 layui-this 无故清空，无选中项
+- [修复] 多系统模式下，顶部菜单超出可视区域，增加滑动切换
 - [修复] 修复定时任务日志无法查询的问题
-- [修复] 数据字典修改数据 刷新问题
-- [修复] 规整项目不规范英文使用
 - [修复] 代码生成时 create_by，update_by 等字段自动关联或自动生成
 - [修复] 代码生成时自定义路径生成代码时点击确定按钮弹窗不关闭的 BUG、
 - [修复] 修改代码生成器生成xml的字段格式化关键字问题
 - [修复] 修复文件丢失后页面无法删除的 BUG
-- [依赖] 升级 Spring boot 依赖至 2.4.4 版本
-- [优化] 开启本地缓存，优化前端组件资源的构建速度
-- [优化] 简化 Sql 文件大小，清理冗余数据
+- [依赖] 升级 Spring boot 2.4.4 版本
+- [依赖] 升级 layui 2.6.8 版本
   
 > 前往下载 ：[pear-admin-boot 1.4.8.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.4.8.RELEASE)
 

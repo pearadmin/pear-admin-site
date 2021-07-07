@@ -1,18 +1,19 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.8.4.release`，更新于：`2021-06-20`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.8.7.release`，更新于：`2021-07-06`，查看 [在线演示](http://layui.pearadmin.com)。
 
-#### 2021-06-20 （ 3.8.4.release ）   :id=log_315
+#### 2021-07-06 （ 3.8.7.release ）   :id=log_315
 
 - [新增] 新增 collapse 配置，支持默认侧边收缩
 - [新增] 新增 pear-text / pear-back 主题，用于自定义组件的主题色跟随
 - [修复] 修复 默认 collaspe 收缩状态下二级菜单悬浮事件失效
-- [修复] 菜单组件高度限制，theme 属性失效问题
+- [修复] 多系统模式下，顶部菜单超出可视区域，增加滚动切换
 - [修复] 修复消息主题，layui-this 默认选中主题色
+- [修复] Menu 组件高度限制，theme 属性失效问题
 - [优化] Button 加载按钮禁用状态仍可点击的问题
 - [优化] Layout 布局栅格媒体查询条件调整
-- [依赖] 更新 Dtree 2.5.8 版本
 - [依赖] 升级 layui 至 2.6.8 最新版本
+- [依赖] 更新 Dtree 2.5.8 版本
 
 > 升级替换 component / pear 目录即可
 

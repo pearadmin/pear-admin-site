@@ -45,19 +45,23 @@ logo:
 
 ```yaml
 menu: 
+  collaspe: false
   data: "admin/data/menu.json"
   method: "GET"
   accordion: true
   control: false
+  controlWidth: 500
   select: "10"
   async: true
 }
 ```
 
+- collaspe: 侧边的默认状态
 - data : 菜单数据
 - method: 请求方式 GET / POST
 - accordion : 是否开启菜单手风琴
 - control : 菜单模式 false 为常规菜单，true 为多系统菜单
+- controlWidth : 顶部菜单的宽度，单位 Px 
 - select : 默认选中菜单项 (ID)
 - async: 渲染模式，true 为异步接口的方式, false 为静态数据
 
