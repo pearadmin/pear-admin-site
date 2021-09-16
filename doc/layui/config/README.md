@@ -13,11 +13,9 @@ admin.reander() 函数在初始化时会读取 pear.config.yml 配置文件构�
 此时你只需要在 index.html ，admin.render() 之前去设置全局配置即可，代码如下
 
 ```javascript
-
 admin.setConfigType("yml");
 admin.setConfigPath("config/pear.config.yml");
 admin.render();
-
 ```
 
 setConfigPath(..) 用于自定义配置文件的存放位置
@@ -41,7 +39,7 @@ logo:
 - image : 网站图标
 
 
-## 侧边菜单
+## 菜单配置
 
 ```yaml
 menu: 
@@ -65,7 +63,7 @@ menu:
 - select : 默认选中菜单项 (ID)
 - async: 渲染模式，true 为异步接口的方式, false 为静态数据
 
-## 多选项卡
+## 视图配置
 
 ```yaml
 tab: 
@@ -80,9 +78,9 @@ tab:
 }
 ```
 
-- muiltTab : 是否开启多标签页
+- enable : 是否开启多标签页
 - keepState : 选项卡切换时，是否刷新页面
-- tabMax : 最大打开标签页数量
+- max : 最大打开标签页数量
 - index: 主页初始化数据
 - session: 存储记忆，刷新浏览器时是否保持打开 Tab
 
@@ -92,35 +90,49 @@ tab:
 theme: 
   defaultColor: "2"
   defaultMenu: "dark-theme"
+  defaultHeader: "light-theme"
   allowCustom: true
+  banner: false
 }
 ```
 
-- defaultColor : 默认主题
-- defaultMenu : 菜单默认颜色 (dark-theme / light-theme)
-- allowCustom : 是否允许用户自行切换主题，为 false 时，缓存主题失效，强制使用配置主题
+- defaultColor : 默认主题色
+- defaultHeader: 默认顶部主题
+- defaultMenu : 默认菜单主题 (dark-theme / light-theme)
+- allowCustom : 是否允许自定义主题，为 false 时，强制使用配置主题
+- banner: 通栏布局
+
+## 颜色配置
 
 ```yaml
 colors: 
 - id: "1"
   color: "#FF5722"
+  second: "#FF5722"
 - id: "2"
   color: "#5FB878"
+  second: "#FF5722"
 - id: "3"
   color: "#1E9FFF"
+  second: "#FF5722"
 - id: "4"
   color: "#FFB800"
+  second: "#FF5722"
 - id: "5"
   color: "darkgray"
+  second: "#FF5722"
 ```
 
-- id : 主题编号
+- id : 编号
 - color: 主题颜色
+- second: 辅助颜色
 
-## 其他配置
+## 更多配置
 
 ```json
 other: 
   keepLoad: "1200"
+  autoHead: false
 ```
 - keepLoad : 主页动画加载时长
+- autoHead : 顶部颜色跟随主题

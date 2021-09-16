@@ -1,6 +1,6 @@
 ## 基本介绍
 
-Notice 组件常用于 消息通知 场景
+Notice 组件常用于 消息通知 场景 (过时)
 
 ## 使用方式
 
@@ -40,4 +40,4 @@ layui.use(['notice', 'jquery', 'layer', 'code'], function() {
 })
 ```
 
-notice.clear 提供屏幕
+notice.clear 清除全部消息

@@ -1,6 +1,27 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.8.7.release`，更新于：`2021-07-06`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.9.0.release`，更新于：`2021-09-16`，查看 [在线演示](http://layui.pearadmin.com)。
+
+#### 2021-09-16 （ 3.9.0.release ）   :id=log_315
+
+- [新增] toast 消息组件，提供 success error 提醒
+- [新增] treetable 的 search 方法，提供关键字检索
+- [新增] layout 的 banner 通栏模式
+- [修复] button Plain 类型样式，随主题色变化
+- [修复] frame 组件刷新时 loading 动画无过度效果
+- [修复] frame 组件 loading 动画完成后，dom 元素未删除问题
+- [优化] menu 组件 light 主题下选中样式
+- [优化] loader 加载动画，随主题色变化
+- [优化] form 组件 foucs 状态下样式
+- [优化] iconPicker 组件，由 layui 原生组件替代
+- [支持] 顶部背景色，跟随主题色变化，并提供 运行时 切换
+- [支持] 单系统模式 与 多系统模式 主题切换
+- [支持] 多选项卡模式 运行时 关闭 与 启用
+- [支持] 支持顶部主题，额外配置，dark-theme 与 light-theme
+- [依赖] 升级 layui 至 2.7.0.rc-5
+- [依赖] 升级 echarts 至 5.2.2
+
+> 升级替换 component / pear 目录即可
 
 #### 2021-07-06 （ 3.8.7.release ）   :id=log_315
 
