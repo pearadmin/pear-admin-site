@@ -2,6 +2,27 @@
 
 > 当前版本：`Ant 1.3.0.release`，更新于：`2021-03-08`，查看 [在线演示](http://ant.pearadmin.com)。
 
+#### 2021-09-20 （ 2.0.0.release ）   :id=log_315
+
+- [新增] Composable 概念
+- [新增] Webpack 弃用，替换 Vite 构建工具
+- [重构] menu 组件，提供 useMenu Composable
+- [重构] tab 组件，提供 useTab Composable
+- [重构] fullScreen 全屏，提供 useFullScreen 调用
+- [修复] route 跳转 参数丢失问题
+- [修复] menu 目录下只存在一个菜单时，保留目录结构
+- [依赖] 升级 vue-next 至 3.2.2
+- [依赖] 升级 ant-design-vue 至 2.2.5
+- [依赖] 升级 g2 至 4.1.20
+- [依赖] 升级 vue-router 至 4.0.10
+- [依赖] 新增 plugin-vue 依赖
+- [依赖] 新增 vite 依赖
+- [依赖] 删除 webpack 相关依赖
+- [删除] 夜间主题
+- [删除] 主题切换
+
+> 前往下载 ：[pear-admin-ant 2.0.0.Release](https://gitee.com/pear-admin/pear-admin-ant/releases/2.0.0)
+
 #### 2021-03-08 （ 1.3.0.release ）   :id=log_315
 
 - [新增] 折叠侧边菜单栏宽度配置，折叠状态下可控宽度
