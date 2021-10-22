@@ -1,6 +1,22 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.9.0.release`，更新于：`2021-09-16`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.9.1.release`，更新于：`2021-09-16`，查看 [在线演示](http://layui.pearadmin.com)。
+
+#### 2021-10-22 （ 3.9.1.release ）   :id=log_315
+
+- [新增] 酸爽翻倍案例
+- [新增] admin.collaspeSide 方法
+- [新增] admin.refreshThis 方法
+- [新增] admin.addTab 方法
+- [新增] admin.closeTab 方法
+- [新增] admin.closeCurrentTab 方法
+- [新增] admin.closeAllTab 方法
+- [新增] admin.closeOtherTab 方法
+- [新增] admin.changeIframe 方法
+- [新增] admin.jump 方法
+- [新增] admin.fullScreen 方法
+
+> 升级替换 component / pear 目录即可
 
 #### 2021-09-16 （ 3.9.0.release ）   :id=log_315
 

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="../favicon.ico" rel="icon">
-    <meta name="baidu_union_verify" content="fbd9a27c6ab795781006bc2095348a8d">
-    <title>Pear Admin 文档</title>
-    <style>
-        body {
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../favicon.ico" rel="icon">
+		<meta name="baidu_union_verify" content="fbd9a27c6ab795781006bc2095348a8d">
+		<title>Pear Admin 文档</title>
+		<style>
+			body {
             margin: 0;
             color: #314659;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -367,87 +367,85 @@
             position: absolute;
         }
     </style>
-</head>
+	</head>
+	<body>
+		<div class="e-header" style="padding-left: 20px;">
+			<div style="float: left;height: 60px;line-height: 60px;font-size: 18px;">文 档 库</div>
+			<div class="e-nav-group">
+				<div class="nav-toggle"><i></i></div>
+				<ul class="e-nav">
+					<li class="e-nav-item e-this">
+						<a e-href="layui/">Layui 版本</a>
+					</li>
+					<li class="e-nav-item">
+						<a e-href="boot/">Boot 版本</a>
+					</li>
+					<li class="e-nav-item">
+						<a e-href="think/">Think 版本</a>
+					</li>
+					<li class="e-nav-item">
+						<a e-href="abp/">Abp 版本</a>
+					</li>
+					<li class="e-nav-item">
+						<a e-href="ant/">Ant 版本</a>
+					</li>
+					<li class="e-nav-item">
+						<a e-href="flask/">Flask 版本</a>
+					</li>
+				</ul>
+			</div>
+			<div class="user-group">
+				<a class="lg-btn" id="btnClear">清缓存</a>
+				<a class="lg-btn" id="btnTheme"></a>
+			</div>
+		</div>
+		<div class="e-iframe">
+			<iframe src="layui/" id="ef" frameborder="0"></iframe>
+		</div>
+		<div class="banner">
+			<div class="wwads-cn wwads-vertical" data-id="73" style="max-width:200px"></div>
+		</div>
+		<!-- js部分 -->
+		<script type="text/javascript" src="https://wwads.cn/js/makemoney.js" async></script>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script>
+			$(function() {
+				var $body = $('body'),
+					$iframe = $('#ef');
+				$body.on('click', '[e-href]', function() {
+					$('.e-header .e-nav-item.e-this').removeClass('e-this');
+					$(this).parent().addClass('e-this');
+					$iframe.attr('src', $(this).attr('e-href'));
+				});
 
-<body>
-    <div class="e-header" style="padding-left: 20px;">
-        <div style="float: left;height: 60px;line-height: 60px;font-size: 18px;">文 档 库</div>
-        <div class="e-nav-group">
-            <div class="nav-toggle"><i></i></div>
-            <ul class="e-nav">
-                <li class="e-nav-item e-this">
-                    <a e-href="layui/">Layui 版本</a>
-                </li>
-                <li class="e-nav-item">
-                    <a e-href="boot/">Boot 版本</a>
-                </li>
-                <li class="e-nav-item">
-                    <a e-href="think/">Think 版本</a>
-                </li>
-                <li class="e-nav-item">
-                    <a e-href="abp/">Abp 版本</a>
-                </li>
-                <li class="e-nav-item">
-                    <a e-href="ant/">Ant 版本</a>
-                </li>
-                <li class="e-nav-item">
-                    <a e-href="flask/">Flask 版本</a>
-                </li>
-            </ul>
-        </div>
-        <div class="user-group">
-            <a class="lg-btn" id="btnClear">清缓存</a>
-            <a class="lg-btn" id="btnTheme"></a>
-        </div>
-    </div>
-    <div class="e-iframe">
-        <iframe src="layui/" id="ef" frameborder="0"></iframe>
-    </div>
-    <div class="banner">
-        <div class="wwads-cn wwads-vertical" data-id="73" style="max-width:200px"></div>
-    </div>
-    <!-- js部分 -->
-    <script type="text/javascript" src="https://wwads.cn/js/makemoney.js" async></script>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script>
-        $(function() {
-            var $body = $('body'),
-                $iframe = $('#ef');
-            $body.on('click', '[e-href]', function() {
-                $('.e-header .e-nav-item.e-this').removeClass('e-this');
-                $(this).parent().addClass('e-this');
-                $iframe.attr('src', $(this).attr('e-href'));
-            });
+				/* 清除缓存 */
+				$('#btnClear').click(function() {
+					localStorage.clear();
+					localStorage.setItem('doc_theme', $body.hasClass('ew-dark') ? 'ew-dark' : '');
+					$iframe.attr('src', $iframe.attr('src'));
+					showMsg('清除成功');
+				});
 
-            /* 清除缓存 */
-            $('#btnClear').click(function() {
-                localStorage.clear();
-                localStorage.setItem('doc_theme', $body.hasClass('ew-dark') ? 'ew-dark' : '');
-                $iframe.attr('src', $iframe.attr('src'));
-                showMsg('清除成功');
-            });
+				/* 显示提示信息 */
+				function showMsg(msg) {
+					if (window.msgTimer) clearTimeout(window.msgTimer);
+					$('.ew-tips-msg').remove();
+					$body.append('<div class="ew-tips-msg">' + msg + '</div>');
+					window.msgTimer = setTimeout(function() {
+						$('.ew-tips-msg').remove();
+					}, 1500);
+				}
 
-            /* 显示提示信息 */
-            function showMsg(msg) {
-                if (window.msgTimer) clearTimeout(window.msgTimer);
-                $('.ew-tips-msg').remove();
-                $body.append('<div class="ew-tips-msg">' + msg + '</div>');
-                window.msgTimer = setTimeout(function() {
-                    $('.ew-tips-msg').remove();
-                }, 1500);
-            }
-
-            /* 切换主题 */
-            $('#btnTheme').click(function() {
-                $body.toggleClass('ew-dark');
-                $iframe[0].contentWindow.$('body').toggleClass('ew-dark');
-                localStorage.setItem('doc_theme', $body.hasClass('ew-dark') ? 'ew-dark' : '');
-            });
-            var theme = localStorage.getItem('doc_theme');
-            if (theme) $body.addClass(theme);
-
-        });
-    </script>
-</body>
+				/* 切换主题 */
+				$('#btnTheme').click(function() {
+					$body.toggleClass('ew-dark');
+					$iframe[0].contentWindow.$('body').toggleClass('ew-dark');
+					localStorage.setItem('doc_theme', $body.hasClass('ew-dark') ? 'ew-dark' : '');
+				});
+				var theme = localStorage.getItem('doc_theme');
+				if (theme) $body.addClass(theme);
+			});
+		</script>
+	</body>
 
 </html>
