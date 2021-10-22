@@ -5,16 +5,16 @@
 #### 2021-10-22 （ 3.9.1.release ）   :id=log_315
 
 - [新增] 酸爽翻倍案例
-- [新增] admin.collaspeSide 方法
-- [新增] admin.refreshThis 方法
-- [新增] admin.addTab 方法
-- [新增] admin.closeTab 方法
-- [新增] admin.closeCurrentTab 方法
-- [新增] admin.closeAllTab 方法
-- [新增] admin.closeOtherTab 方法
-- [新增] admin.changeIframe 方法
-- [新增] admin.jump 方法
-- [新增] admin.fullScreen 方法
+- [新增] admin.collaspeSide 侧边切换
+- [新增] admin.refreshThis 刷新当前页
+- [新增] admin.addTab 新增卡片
+- [新增] admin.closeTab 关闭指定卡片
+- [新增] admin.closeCurrentTab 关闭当前卡片
+- [新增] admin.closeAllTab 关闭所有卡片
+- [新增] admin.closeOtherTab 关闭其他
+- [新增] admin.changeIframe 切换 iframe 页面
+- [新增] admin.jump 兼容跳转
+- [新增] admin.fullScreen 全屏切换
 
 > 升级替换 component / pear 目录即可
 
