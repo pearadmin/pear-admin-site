@@ -1,6 +1,6 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.9.1.release`，更新于：`2021-09-16`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.9.1.release`，更新于：`2021-10-22`，查看 [在线演示](http://layui.pearadmin.com)。
 
 #### 2021-10-22 （ 3.9.1.release ）   :id=log_315
 
