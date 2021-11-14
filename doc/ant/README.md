@@ -1,6 +1,19 @@
 ## 更新日志   :id=log
 
-> 当前版本：`Ant 1.3.0.release`，更新于：`2021-03-08`，查看 [在线演示](http://ant.pearadmin.com)。
+> 当前版本：`Ant 2.0.2.release`，更新于：`2021-11-13`，查看 [在线演示](http://ant.pearadmin.com)。
+
+#### 2021-11-13 （ 2.0.2.release ）   :id=log_315
+
+- [新增] profile 个人详情页
+- [新增] demo 组件，用于优化 setup.vue 页
+- [修复] console.vue 警告信息
+- [修复] header dropdown 错位显示
+- [修复] theme 主题色切换
+- [修复] 多选卡 close 关闭
+- [依赖] 升级 vue 3.2.21
+- [依赖] 升级 vite 版本
+
+> 前往下载 ：[pear-admin-ant 2.0.2.Release](https://gitee.com/pear-admin/pear-admin-ant/releases/2.0.2)
 
 #### 2021-09-20 （ 2.0.0.release ）   :id=log_315
 
