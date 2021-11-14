@@ -1,21 +1,20 @@
 ## 更新日志   :id=log
 
-> 当前版本：`boot 1.5.0.release`，更新于：`2021-07-06`，查看 [在线演示](http://boot.pearadmin.com)。
+> 当前版本：`boot 1.5.4.release`，更新于：`2021-11-14`，查看 [在线演示](http://boot.pearadmin.com)。
 
-#### 2021-07-06 （ 1.5.0.release ）   :id=log_315
+#### 2021-11-14 （ 1.5.4.release ）   :id=log_315
 
-- [新增] 新增 icon 30 + 图标
-- [修复] 修复定时任务日志无法查询
-- [修复] Notice 组件 layui-this 无故清空，无选中项
-- [修复] 多系统模式下，顶部菜单超出可视区域，增加滑动切换
-- [修复] 代码生成时 create_by，update_by 等字段自动关联或自动生成
-- [修复] 代码生成时自定义路径生成代码时点击确定按钮弹窗不关闭
-- [修复] 修改代码生成器生成xml的字段格式化关键字问题
-- [修复] 修复文件丢失后页面无法删除的问题
-- [依赖] 升级 Spring boot 2.4.4 版本
-- [依赖] 升级 layui 2.6.8 版本
+- [优化] 使用 revision 管理 maven 版本 
+- [优化] 支持 mysql 5.5 版本
+- [修复] 部门管理，删除时存在下级部门时增加限制
+- [修复] 权限管理，删除时存在下级权限时增加限制
+- [修复] treetable 组件 reload 重载无效
+- [升级] fastjson 1.2.78 版本
+- [升级] spring boot 2.5.5 版本
+- [升级] mybatis 为 mybatis-plus 框架
+- [优化] layui 3.9.0 版本
   
-> 前往下载 ：[pear-admin-boot 1.5.0.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.5.0)
+> 前往下载 ：[pear-admin-boot 1.5.4.Release](https://gitee.com/pear-admin/Pear-Admin-Boot/releases/1.5.4)
 
 #### 2021-03-14 （ 1.4.0.release ）   :id=log_315
 
