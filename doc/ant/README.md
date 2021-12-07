@@ -1,6 +1,22 @@
 ## 更新日志   :id=log
 
-> 当前版本：`Ant 2.0.2.release`，更新于：`2021-11-13`，查看 [在线演示](http://ant.pearadmin.com)。
+> 当前版本：`Ant 3.0.0.release`，更新于：`2021-12-05`，查看 [在线演示](http://ant.pearadmin.com)。
+
+#### 2021-12-05 （ 3.0.0.release ）   :id=log_315
+
+- [新增] p-table 表格组件，支持自定义插槽
+- [新增] p-table 表格组件，defaultToolbar 属性，支持关闭工具栏
+- [新增] p-query 查询组件 type 属性 custom 值，支持自定义插槽
+- [修复] 菜单，主题，多视图，切换不保存
+- [修复] 现存 warming 警告
+- [升级] ant design vue 3.0.0 - 重要
+- [升级] vite-plugin-theme-preprocessor 1.3.3
+- [升级] plugin-vue 1.10.1
+- [升级] axios 0.24.0
+- [升级] vue 3.2.23
+- [升级] G2 4.1.32
+
+> 前往下载 ：[pear-admin-ant 3.0.0.Release](https://gitee.com/pear-admin/pear-admin-ant/releases/3.0.0)
 
 #### 2021-11-13 （ 2.0.2.release ）   :id=log_315
 

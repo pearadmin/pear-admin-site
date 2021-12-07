@@ -1,6 +1,7 @@
 * [开始使用](start/)
 * [项目结构](file/)
 * [核心配置](config/)
+* [核心函数](function/)
 * [框架菜单](menu/)
 * [常用组件](javascript:;)
     - [button 按钮](component/button)
@@ -15,6 +16,6 @@
 
 <div class="ew-doc-adv-list" style="padding-top:8px;padding-left:8px;padding-right:8px;">
     <a class="ew-doc-adv-item" href="https://www.cmy.cn/cart" target="_blank">
-        <img src="image/茶猫云.jpg"/>
+        <img src="./image/cmy.jpg"/>
     </a>
 </div>

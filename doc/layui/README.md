@@ -1,10 +1,10 @@
 ## 更新日志   :id=log
 
-> 当前版本：`layui 3.9.1.release`，更新于：`2021-10-22`，查看 [在线演示](http://layui.pearadmin.com)。
+> 当前版本：`layui 3.9.2.release`，更新于：`2021-12-07`，查看 [在线演示](http://layui.pearadmin.com)。
 
-#### 2021-10-22 （ 3.9.1.release ）   :id=log_315
+#### 2021-12-07 （ 3.9.2.release ）   :id=log_315
 
-- [新增] 酸爽翻倍案例
+- [新增] admin.refresh 方法，刷新选项卡
 - [新增] admin.collaspeSide 侧边切换
 - [新增] admin.refreshThis 刷新当前页
 - [新增] admin.addTab 新增卡片
@@ -15,6 +15,8 @@
 - [新增] admin.changeIframe 切换 iframe 页面
 - [新增] admin.jump 兼容跳转
 - [新增] admin.fullScreen 全屏切换
+- [优化] button.css 样式
+- [优化] tab.css 样式
 
 > 升级替换 component / pear 目录即可
 
