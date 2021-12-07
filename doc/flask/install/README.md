@@ -31,11 +31,35 @@ python dev/initDb.py
 
 ```.flaskenv
 .flaskenv文件
-FLASK_APP=main.py
+# flask配置
+FLASK_APP=app.py
 FLASK_ENV=development
 FLASK_DEBUG=1
-FLASK_RUN_HOST = 127.0.0.1
+FLASK_RUN_HOST = 127.0.0.1	#如果远程开发或者内网访问,改成 0.0.0.0
 FLASK_RUN_PORT = 5000
+
+# pear admin flask配置
+SYSTEM_NAME = Pear Admin	#系统的名称，前端展示
+
+# MySql配置信息
+MYSQL_HOST=127.0.0.1
+# MYSQL_HOST=dbserver		#docker-compose的link地址
+MYSQL_PORT=3306
+MYSQL_DATABASE=PearAdminFlask
+MYSQL_USERNAME=root
+MYSQL_PASSWORD=root
+
+# Redis 配置
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
+
+# 密钥配置(记得改)
+SECRET_KEY='pear-admin-flask'	#很重要，部署一定要改
+
+# 邮箱配置
+MAIL_SERVER='smtp.qq.com'
+MAIL_USERNAME='123@qq.com'
+MAIL_PASSWORD='XXXXX' # 生成的授权码
 ```
 
 
